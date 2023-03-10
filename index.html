@@ -7,6 +7,27 @@
     <title>Commit description generator</title>
 </head>
 <body>
-
+<header>
+    <div class="container">
+        <h1>Commit description generator</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <form>
+            <div class="form_controls">
+                <label class="form_controls__label" for="commit_type">
+                    <select class="form_controls__commit_select" id="commit_type" name="commit_type">
+                        <option class="form_controls__commit_type_option" value="init:">init</option>
+                        <option class="form_controls__commit_type_option" value="feat:">feat</option>
+                        <option class="form_controls__commit_type_option" value="fix:">fix</option>
+                        <option class="form_controls__commit_type_option" value="refactor:">refactor</option>
+                        <option class="form_controls__commit_type_option" value="docs:">docs</option>
+                    </select>
+                </label>
+            </div>
+        </form>
+    </div>
+</main>
 </body>
 </html>
