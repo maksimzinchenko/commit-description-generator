@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Commit description generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Commit description generator</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <div class="form_controls">
+                    <div class="form_controls__item">
+                        <div class="form_controls__control">
+                            <label class="form_controls__label" for="commit_type">Commit type</label>
+                            <select class="form_controls__commit_select" id="commit_type" name="commit_type">
+                                <option class="form_controls__commit_type_option" value="init:">init</option>
+                                <option class="form_controls__commit_type_option" value="feat:">feat</option>
+                                <option class="form_controls__commit_type_option" value="fix:">fix</option>
+                                <option class="form_controls__commit_type_option" value="refactor:">refactor</option>
+                                <option class="form_controls__commit_type_option" value="docs:">docs</option>
+                            </select>
+                        </div>
+                        <div class="form_controls__description">
+                            <p>Here will be an option description</p>
+                        </div>
+
+
+                    </div>
+                    <div class="form_controls__item">
+                        <div class="form_controls__control">
+                            <label class="form_controls__label" for="commit_message">Commit text message</label>
+                            <input class="form_controls__commit_message" id="commit_message" type="text" placeholder="Here write your commit description" size="60"/>
+                        </div>
+                        <div class="form_controls__description">
+                            <p>Write what you do in this commit</p>
+                        </div>
+                    </div>
+                    <div class="form_controls__item">
+                        <div class="form_controls__control">
+                            <label class="form_controls__label" for="commit_timestamp">Commit timestamp</label>
+                            <input class="form_controls__commit_time" id="commit_timestamp" type="text" size="30"/>
+                        </div>
+                        <div class="form_controls__description">
+                            <p>Here will be a timestamp selector</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_actions">
+                    <div class="form_controls__item">
+                        <div class="form_controls__control">
+                            <label class="form_controls__label" for="commit_timestamp">Press button to generate commit description</label>
+                            <button class="form_actions__generate_button">Generate</button>
+                        </div>
+                        <div class="form_controls__description">
+                            <textarea class="form_control__commit_full_description" id="commit_full_description" name="commit_full_description" rows="4" cols="50">Here will be a commit full description</textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
