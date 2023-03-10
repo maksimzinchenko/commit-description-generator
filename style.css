@@ -1,8 +1,16 @@
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    background-color: bisque;
+    margin: 10px auto;
+    background-color: goldenrod;
     padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .form_controls {
@@ -17,19 +25,16 @@
     align-items: flex-start;
     gap: 10px;
     max-width: 100%;
-    background-color: aqua;
+    background-color: antiquewhite;
     padding: 10px;
 }
-
-
-
 
 .form_controls__control {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    line-height: 24px;
-    font-size: 22px;
+    line-height: 1.1em;
+    font-size: 1em;
 }
 
 .form_controls__commit_type_option, .form_controls__commit_select {

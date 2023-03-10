@@ -26,7 +26,10 @@ function generateCommitDescription(e){
     }
     const commit_time = document.querySelector('.form_controls__commit_time').value;
 
-    commit_description.value = `git commit -m ${commit_type} ${commit_message} (${commit_time})` ;
+    commit_description.value = `git commit -m "${commit_type} ${commit_message} (${commit_time})"` ;
+    commit_description.select();
+    commit_description.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(commit_description.value);
 }
 
 function mainLoader() {
