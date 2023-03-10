@@ -1,0 +1,43 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: bisque;
+    padding: 20px;
+}
+
+.form_controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_controls__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 100%;
+    background-color: aqua;
+    padding: 10px;
+}
+
+
+
+
+.form_controls__control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 24px;
+    font-size: 22px;
+}
+
+.form_controls__commit_type_option, .form_controls__commit_select {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.form_controls__description {
+    padding: 10px;
+    text-align: center;
+}
