@@ -41,3 +41,9 @@
     padding: 10px;
     text-align: center;
 }
+
+.form_control__commit_full_descriptions {
+    font-size: 2em;
+    line-height: 2em;
+    columns: 30;
+}
